@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+<!--    <item-->
+<!--        android:id="@+id/nav_profile"-->
+<!--        android:icon="@mipmap/profile"-->
+<!--        android:title="@string/my_profile" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_my_orders"-->
+<!--        android:icon="@drawable/cart"-->
+<!--        android:title="@string/my_orders" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_offerr"-->
+<!--        android:icon="@mipmap/offers_nearby"-->
+<!--        android:title="@string/offers_nearby" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_favorite"-->
+<!--        android:icon="@mipmap/favorite"-->
+<!--        android:title="@string/favorite_supermarkets" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_shopping_list"-->
+<!--        android:icon="@mipmap/list"-->
+<!--        android:title="@string/shopping_lists" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_wallet"-->
+<!--        android:icon="@drawable/wallet"-->
+<!--        android:title="@string/wallet" />-->
+
+
+
+<!--    <item-->
+<!--        android:id="@+id/nav_promo"-->
+<!--        android:icon="@mipmap/promo"-->
+<!--        android:title="@string/promo_codes" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_loyalty_points"-->
+<!--        android:icon="@mipmap/loyalty"-->
+<!--        android:title="@string/loyalty_points" />-->
+<!--    <item-->
+<!--        android:id="@+id/refer_a_friend"-->
+<!--        android:icon="@mipmap/refer"-->
+<!--        android:title="@string/refer_a_friend" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_share_on_social_media"-->
+<!--        android:icon="@mipmap/share"-->
+<!--        android:title="@string/share_on_social_media" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_chat"-->
+<!--        android:visible="false"-->
+<!--        android:icon="@drawable/chat"-->
+<!--        android:title="@string/chat_us" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_contact_us"-->
+<!--        android:icon="@drawable/information"-->
+<!--        android:title="@string/contact_ud" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_logout"-->
+<!--        android:icon="@drawable/logouttt"-->
+<!--        android:title="@string/logout" />-->
+<!--    <item-->
+<!--        android:id="@+id/version"-->
+<!--        android:title="V 2.8" />-->
+
+</menu>

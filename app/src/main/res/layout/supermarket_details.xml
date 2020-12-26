@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:background="@color/moov_color"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_container"
+        android:layout_marginTop="-10dp"
+        android:orientation="vertical"
+        android:paddingTop="30sp"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:paddingBottom="10sp"
+        android:background="@drawable/corners_white_market_inside"
+        android:layout_height="match_parent">
+        <include layout="@layout/list_view_with_refresh" android:id="@+id/rating_view" android:visibility="gone"/>
+        <include layout="@layout/info_view" android:id="@+id/info_view" android:visibility="gone"/>
+        <include layout="@layout/menu_view" android:id="@+id/menu_view" android:visibility="visible" />
+        <include layout="@layout/list_view" android:id="@+id/offers_view" android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/top_container"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:gravity="center|top"
+            android:orientation = "vertical"
+            android:layout_weight="3"
+            android:id="@+id/containback"
+            android:padding="10dp"
+            android:layout_height = "match_parent" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/back"
+                android:onClick="onClick"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:src="@drawable/back_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/chat_icon_is"
+                android:layout_weight="1"
+                android:id="@+id/chat"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/call_icon_is"
+                android:layout_weight="1"
+                android:id="@+id/call"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white_color"
+            android:layout_marginTop="-15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width = "match_parent"
+            android:orientation = "horizontal"
+            android:outlineAmbientShadowColor="@color/gray"
+            android:layout_weight="1"
+            android:layout_height = "match_parent" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="130dp">
+                    <RelativeLayout
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="77dp"
+                            app:civ_border_width="3dp"
+                            android:id="@+id/iv_cat_market_logo"
+                            app:civ_border_color="@color/red_image"
+                            android:src="@drawable/image_jijab"
+                            android:layout_height="77dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/close_image"
+                            android:id="@+id/closeImage"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="19dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/tv_cat_market_name"
+                            android:text="مؤسسة تجار"
+                            android:textColor="@color/moov_color"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="5sp"
+                            android:text = ""
+                            android:id="@+id/desc"
+                            android:textColor="@color/moov_color"
+                            android:layout_height="wrap_content"/>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rb_cat_market_rating"
+                            android:layout_marginBottom="5sp"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:tint="@color/graytext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/market_cart" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textSize="8dp"
+                                    android:text="150 LE"
+                                    android:tint="@color/graytext"
+
+                                    android:id="@+id/tv_cat_market_min_order"
+                                    android:textColor="@color/graytext"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:tint="@color/graytext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/market_money" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textSize="8dp"
+                                    android:text="150 LE"
+                                    android:id="@+id/tv_cat_market_delivery_fee"
+                                    android:textColor="@color/graytext"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:tint="@color/graytext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/market_clock" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textSize="8dp"
+                                    android:text="150 LE"
+                                    android:id="@+id/tv_cat_market_delivery_time"
+                                    android:textColor="@color/graytext"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50sp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:id="@+id/menu_icon"
+                        android:src="@drawable/all_products_icon"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:padding="10sp"
+                        android:src="@drawable/info_icon"
+                        android:id="@+id/info_icon"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:padding="10sp"
+                        android:id="@+id/like_icon"
+                        android:src="@drawable/like_icon"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:padding="10sp"
+                        android:src="@drawable/copoun_icon"
+                        android:id="@+id/offers_icon"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:gravity="center|top"
+            android:orientation = "vertical"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:layout_height = "match_parent" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/cart_icon"
+                android:id="@+id/cart"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="20sp"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:id="@+id/cart_count"
+                    android:text="1"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@color/colorDepartments"
+                    android:layout_height="20sp"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/love_white"
+                android:layout_weight="1"
+                android:id="@+id/favourite"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/copoun_white"
+                android:id="@+id/coupon"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

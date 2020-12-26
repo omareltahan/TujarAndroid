@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_height="match_parent"
+    android:id="@+id/list"
+    android:layout_width="match_parent" />
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:padding="10dp"
+        app:cardCornerRadius="12sp"
+        android:id="@+id/rateit"
+        app:cardBackgroundColor = "@color/moov_color"
+        android:layout_width="200sp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50sp">
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white_color"
+        android:text="@string/ratemerchant"
+        android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

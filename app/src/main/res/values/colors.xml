@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#027FBD</color>
+    <color name="colorPrimaryDark">#04689A</color>
+    <color name="colorPrimaryDarkDark">#014669</color>
+    <color name="colorAccent">#D4EE20</color>
+    <color name="white_color">#ffffff</color>
+
+<color name="colorBackground">#FBFAF8</color>
+<color name="colorDepartments">#D10000</color>
+<color name="red_image">#E04F5F</color>
+<color name="green_image">#3ED58C</color>
+
+<color name="black_overlay">#66000000</color>
+<color name="black">#000000</color>
+<color name="yellow">#FFD700</color>
+<color name="orange">#FF8C00</color>
+<color name="gray">#ABABAB</color>
+<color name="graytext">#5A5D5D</color>
+<color name="colorAccentDark">#00336B</color>
+<color name="moov_color">#A965B1</color>
+<color name="ggreen">#0fba15</color>
+<color name="gray_text">#888282</color>
+
+<color name="hintwhitecolor">#55ffffff</color>
+
+<color name="browser_actions_bg_grey">#F5F5F5</color>
+<color name="browser_actions_divider_color">#1E000000</color>
+<color name="browser_actions_divider_color2">#000000</color>
+<color name="browser_actions_text_color">#DE000000</color>
+<color name="browser_actions_title_color">#646464</color>
+<color name="border_featured">#E88F21</color>
+<color name="black_over_color">#D4000000</color>
+<dimen name="browser_actions_context_menu_max_width">500dp</dimen>
+<dimen name="browser_actions_context_menu_min_padding">20dp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="60dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/menu_icon"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/menuImg"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/back"
+            android:padding="10sp"
+            android:src="@drawable/back_black"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10sp"
+            android:src="@drawable/tugar_logo"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_height="wrap_content"
+    android:id="@+id/list"
+    android:layout_width="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_height="match_parent"
+    android:id="@+id/list2"
+    android:layout_width="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/nomarketscontainer"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/image"
+                android:src="@drawable/nomarkets"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="لا يوجد متاجر تابعة لهذا التصنيف"
+                android:id="@+id/text"
+                android:layout_marginTop="5sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>

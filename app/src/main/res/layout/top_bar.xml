@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <ImageView
+       android:layout_width="wrap_content"
+       android:src="@drawable/menu_icon"
+       android:padding="10dp"
+       android:layout_alignParentEnd="true"
+       android:layout_centerVertical="true"
+       android:id="@+id/menuImg"
+       android:layout_height="wrap_content"/>
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="60dp"
+       android:src="@drawable/avatar"
+       android:id="@+id/userImg"
+       app:civ_border_width="2dp"
+       android:padding="10dp"
+       app:civ_border_color="@color/graytext"
+       android:layout_alignParentStart="true"
+       android:layout_centerVertical="true"
+       android:layout_height="60dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10sp"
+        android:src="@drawable/tugar_logo"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

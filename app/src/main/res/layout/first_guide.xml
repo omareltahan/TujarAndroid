@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="40sp"
+    android:background="@drawable/white_background"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/back"
+        android:visibility="gone"
+        android:layout_gravity="start"
+        android:padding="10sp"
+        android:src="@drawable/back_black"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/first_guid_image"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="@string/appnametitle"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="@string/whowe"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/graytext"
+        android:textSize="17dp"
+        android:text="@string/guid1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/next"
+        android:src="@drawable/first_guide_bottom"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_green"
+            android:text="بداية التسوق"
+            android:textColor="@color/white_color"
+            android:textSize="20dp" />
+        <Button
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/login"
+            android:text = "تسجيل دخول"
+            android:textColor="@color/white_color"
+            android:background="@drawable/background_blue"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

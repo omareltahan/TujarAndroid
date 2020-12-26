@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        android:id="@+id/header"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/back"
+            android:src="@drawable/back_black"
+            android:padding="7dp"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/close"
+            android:src="@drawable/disagreement"
+            android:padding="7dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrowwww"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:id="@+id/chat_close"
+            android:layout_toStartOf="@id/close"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_height="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Technical support"
+            android:textColor="@color/black"
+            android:id="@+id/title"
+            android:textSize="17dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_above="@+id/sec_lay"
+        android:layout_below="@+id/header"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/sec_lay"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal"
+        >
+
+        <!---->
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/image_add"
+            android:layout_width="20sp"
+            android:layout_height="22sp"
+            android:src="@drawable/ic_photo"
+            />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="35sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/send_edit_send"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <EditText
+                android:id="@+id/Comment_Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="descripte your problem"
+                android:imeOptions="actionSend"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:textSize="12sp" />
+
+            <!--
+            <View
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#FF0000FF" />
+
+            <TextView
+                android:layout_marginEnd="6sp"
+                android:textColor="#9428e2"
+                android:textSize="11sp"
+                android:layout_marginStart="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Send"
+                android:gravity="center_vertical"
+                />
+
+                -->
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imageSend"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_iconfinder_icon"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

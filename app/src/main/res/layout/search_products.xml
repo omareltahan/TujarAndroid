@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="20sp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/back_black"
+            android:paddingStart="10sp"
+            android:id="@+id/back"
+            android:paddingEnd="10sp"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:background="@drawable/background_primarydark"
+        android:layout_height="44sp">
+        <ImageView
+            android:padding="7sp"
+            android:id="@+id/clear"
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:src="@drawable/error"
+            android:tint="@color/gray"
+            android:layout_height="30dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/white_color"
+            android:id="@+id/searchView"
+            android:paddingStart="10sp"
+            android:hint="@string/search"
+            android:textAlignment="viewStart"
+            android:textColorHint="@color/hintwhitecolor"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:padding="5sp"
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:src="@drawable/searchicon"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:paddingTop="20sp"
+        android:id="@+id/list"
+        android:layout_height="match_parent"/>
+    <LinearLayout android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/nomarketscontainer"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/image"
+            android:src="@drawable/noproducts"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="لا يوجد منتجات تحتوي هذه الكلمة"
+            android:id="@+id/text"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

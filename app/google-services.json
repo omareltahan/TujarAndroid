@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "684396056758",
+    "firebase_url": "https://tugar-47ae1.firebaseio.com",
+    "project_id": "tugar-47ae1",
+    "storage_bucket": "tugar-47ae1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684396056758:android:4aa13a1898e2ca18e8d617",
+        "android_client_info": {
+          "package_name": "com.SB.SBtugar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684396056758-5un9c1mehq4ac4511dph19u5carl2n9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.SB.SBtugar",
+            "certificate_hash": "a4c49f6ec646d657fb4137258803a7a631b53e47"
+          }
+        },
+        {
+          "client_id": "684396056758-cv3fkfsuluujjj58s8ludd95omelaa5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNGkT_SwNxx56skzgUfwUS5snyPOg0UAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684396056758-cv3fkfsuluujjj58s8ludd95omelaa5a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684396056758-d20i92b5u1noqt54b3kkdjj5ac9ab02o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Atrap.SuperBekala.Tugar"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684396056758:android:57b2856a15cbf238e8d617",
+        "android_client_info": {
+          "package_name": "com.SB.tugar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684396056758-cv3fkfsuluujjj58s8ludd95omelaa5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNGkT_SwNxx56skzgUfwUS5snyPOg0UAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684396056758-cv3fkfsuluujjj58s8ludd95omelaa5a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684396056758-d20i92b5u1noqt54b3kkdjj5ac9ab02o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Atrap.SuperBekala.Tugar"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

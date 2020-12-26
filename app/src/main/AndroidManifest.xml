@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.SB.SBtugar">
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.Intent.ACTION_DIAL" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@drawable/tugar_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tugar_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="q">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id"/>
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true" />
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.SB.SBtugar.Activities.UserVendorChat"/>
+        <activity android:name="com.SB.SBtugar.Activities.FullScreenImage"/>
+        <activity android:name="com.SB.SBtugar.Activities.Today_Surprise_View"/>
+        <activity android:name="com.SB.SBtugar.Activities.RegisterNewUser"/>
+        <activity android:name="com.SB.SBtugar.Activities.SearchProducts"/>
+        <activity android:name="com.SB.SBtugar.Activities.FullScreenImages"/>
+        <activity android:name="com.SB.SBtugar.UtilsFirebase.MessagesActivity"/>
+        <activity android:name="com.SB.SBtugar.UtilsFirebase.SendImageActivity"/>
+        <activity android:name="com.SB.SBtugar.Activities.CartActivity"/>
+        <activity android:name="com.SB.SBtugar.Activities.MarketDataView"/>
+        <activity android:name="com.SB.SBtugar.Activities.OrderDetailsView"/>
+        <activity android:name="com.SB.SBtugar.Activities.ProfileFragment"/>
+        <activity android:name="com.SB.SBtugar.Activities.ProductDetailsActivity"/>
+        <activity android:name="com.SB.SBtugar.Activities.OrdersActivity"/>
+        <activity android:name="com.SB.SBtugar.Activities.CheckoutActivity"/>
+        <activity android:name="com.SB.SBtugar.Activities.MainActivity"/>
+        <activity android:name="com.SB.SBtugar.Activities.GuideOne"/>
+        <activity android:name="com.SB.SBtugar.Activities.Favourite_View"/>
+        <activity android:name="com.SB.SBtugar.Activities.GuideSecond"/>
+        <activity android:name="com.SB.SBtugar.Activities.DrawerPageView"/>
+        <activity android:name="com.SB.SBtugar.Activities.AreaSelectorActivity"/>
+        <activity android:name="com.SB.SBtugar.Activities.FullscreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
